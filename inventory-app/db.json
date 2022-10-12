@@ -1,0 +1,77 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "product_name": "Samsung Galaxy 4",
+      "description": "Phone with 4g Signal",
+      "price": 3000
+    },
+    {
+      "id": 2,
+      "product_name": "LG Ultra Wide Monitor",
+      "description": "Monitor with 4k resolution",
+      "price": 20000
+    },
+    {
+      "id": 3,
+      "product_name": "Razer Blade Mouse",
+      "description": "Mouse for gaming",
+      "price": 20000
+    },
+    {
+      "id": 4,
+      "product_name": "Razer Blade Mouse",
+      "description": "Mouse for gaming",
+      "price": 5000
+    },
+    {
+      "id": 5,
+      "product_name": "Glorius Case ATX",
+      "description": "Case for PC with RGB",
+      "price": 3000
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "Alex Avilez",
+      "email": "aa@example.com",
+      "fechaN": "October 12 2001",
+      "role": "admin",
+      "position": "Intern"
+    },
+    {
+      "id": 2,
+      "username": "Marcos Granadino",
+      "email": "mg@example.com",
+      "fechaN": "June 01 1999",
+      "role": "user",
+      "position": "Intern"
+    },
+    {
+      "id": 3,
+      "username": "Lucia Parrales",
+      "email": "lp@example.com",
+      "fechaN": "July 02 1978",
+      "role": "admin",
+      "position": "Administrator"
+    },
+    {
+      "id": 4,
+      "username": "Martin Valejos",
+      "email": "mv@example.com",
+      "fechaN": "Sept 14 1989",
+      "role": "user",
+      "position": "IT Manager"
+    },
+    {
+      "id": 5,
+      "username": "Carlos Valejos",
+      "email": "cv@example.com",
+      "fechaN": "Sept 29 1997",
+      "role": "user",
+      "position": "FrontEnd Developer"
+    }
+  ],
+  "categories": { "id": 1, "category_name": "Technology" }
+}

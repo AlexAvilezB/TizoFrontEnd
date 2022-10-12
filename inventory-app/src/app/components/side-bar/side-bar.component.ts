@@ -10,7 +10,7 @@ export class SideBarComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  public collapsed = true;
+  public collapsed = false;
 
   closeSideBar() {
     this.collapsed = !this.collapsed;
