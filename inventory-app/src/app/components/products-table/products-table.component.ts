@@ -3,6 +3,7 @@ import { ProductsService } from '../../services/products.service';
 import { Product } from '../../models/product.model';
 import { CategoryService } from '../../services/categories.service';
 import { Category } from 'src/app/models/category.model';
+import { Router } from '@angular/router';
 
 @Injectable()
 @Component({
@@ -13,7 +14,7 @@ import { Category } from 'src/app/models/category.model';
 export class ProductsTableComponent implements OnInit {
   products: Product[] = [];
   categories: Category[] = [];
-  constructor(private productsService: ProductsService, private categoryService: CategoryService) {}
+  constructor(private productsService: ProductsService, private categoryService: CategoryService, private router: Router) {}
 
   ngOnInit(): void {
     this.productsService.getProducts().subscribe((data) => {
@@ -24,6 +25,18 @@ export class ProductsTableComponent implements OnInit {
     this.categories = data;
   });
 }
+
+  updateProduct(products: Product) {
+    let id = products.id;
+    this.router.navigate(['products/update/', id]);
+  }
+
+  deleteProduct(product: Product) {
+    this.productsService.deleteProduct(product).subscribe(data => {
+      this.products = this.products.filter(p => p.id !== product.id);
+      alert('Product deleted successfully');
+    })
+  }
 
 
 }

@@ -13,11 +13,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProductsTableComponent } from './components/products-table/products-table.component';
 import { ProductsService } from './services/products.service';
 import { AddProductsComponent } from './components/add-products/add-products.component';
+import { UpdateProductsComponent } from './components/update-products/update-products.component';
+
 
 const appRoutes: Routes = [
   { path: 'products', component: HomePageComponent },
   { path: 'login', component: LoginPageComponent },
-  {path: 'products/add', component: AddProductsComponent},
+  { path: 'products/add', component: AddProductsComponent},
+  { path: 'products/update/:id', component: UpdateProductsComponent},
 ];
 
 @NgModule({
@@ -28,7 +31,8 @@ const appRoutes: Routes = [
     HomePageComponent,
     SideBarComponent,
     ProductsTableComponent,
-    AddProductsComponent
+    AddProductsComponent,
+    UpdateProductsComponent
   ],
   imports: [
     BrowserModule,

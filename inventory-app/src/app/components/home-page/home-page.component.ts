@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 })
 export class HomePageComponent implements OnInit {
 
-  title = '>Listado de productos';
+  title = '> Listado de productos';
 
   constructor(private router:Router) { }
 

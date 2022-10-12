@@ -9,17 +9,24 @@ import { ProductsService } from 'src/app/services/products.service';
   styleUrls: ['./add-products.component.css'],
 })
 export class AddProductsComponent implements OnInit {
-  title = '/Add Products';
+  title = '/ Add Products';
 
   constructor(
     private router: Router,
     private productsService: ProductsService
   ) {}
 
+  products: Product[] = [];
+
   ngOnInit(): void {}
 
-  addProduct() {
-    this.router.navigate(['/products']);
+  saveProduct() {
+    let product: Product = {id: this.idInput, product_name: this.nameInput, description: this.descriptionInput, price: this.priceInput, cantity: this.cantityInput};
+    this.productsService.addProduct(product)
+    .subscribe (product => {
+      this.products.push(product);
+      this.router.navigate(['/products']);
+    })
   }
 
   idInput: number = 0;
