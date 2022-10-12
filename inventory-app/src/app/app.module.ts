@@ -13,7 +13,7 @@ import { ProductsTableComponent } from './components/products-table/products-tab
 import { ProductsService } from './services/products.service';
 
 const appRoutes: Routes = [
-  { path: '', component: HomePageComponent },
+  { path: 'products', component: HomePageComponent },
   { path: 'login', component: LoginPageComponent },
 ];
 

@@ -4,31 +4,36 @@
       "id": 1,
       "product_name": "Samsung Galaxy 4",
       "description": "Phone with 4g Signal",
-      "price": 3000
+      "price": 3000,
+      "cantity": 3
     },
     {
       "id": 2,
       "product_name": "LG Ultra Wide Monitor",
       "description": "Monitor with 4k resolution",
-      "price": 20000
+      "price": 20000,
+      "cantity" : 5
     },
     {
       "id": 3,
       "product_name": "Razer Blade Mouse",
       "description": "Mouse for gaming",
-      "price": 20000
+      "price": 20000,
+      "cantity": 6
     },
     {
       "id": 4,
-      "product_name": "Razer Blade Mouse",
-      "description": "Mouse for gaming",
-      "price": 5000
+      "product_name": "Razer Keyboard",
+      "description": "Keyboard with RGB for gaming",
+      "price": 3000,
+      "cantity": 1
     },
     {
       "id": 5,
       "product_name": "Glorius Case ATX",
       "description": "Case for PC with RGB",
-      "price": 3000
+      "price": 3000,
+      "cantity": 10
     }
   ],
   "users": [
@@ -73,5 +78,5 @@
       "position": "FrontEnd Developer"
     }
   ],
-  "categories": { "id": 1, "category_name": "Technology" }
+  "categories": [{ "id": 1, "category_name": "Technology" }]
 }
