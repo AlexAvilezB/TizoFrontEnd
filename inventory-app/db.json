@@ -12,7 +12,7 @@
       "product_name": "LG Ultra Wide Monitor",
       "description": "Monitor with 4k resolution",
       "price": 20000,
-      "cantity" : 5
+      "cantity": 5
     },
     {
       "id": 3,
@@ -78,5 +78,10 @@
       "position": "FrontEnd Developer"
     }
   ],
-  "categories": [{ "id": 1, "category_name": "Technology" }]
+  "categories": [
+    {
+      "id": 1,
+      "category_name": "Technology"
+    }
+  ]
 }

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,10 +12,12 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductsTableComponent } from './components/products-table/products-table.component';
 import { ProductsService } from './services/products.service';
+import { AddProductsComponent } from './components/add-products/add-products.component';
 
 const appRoutes: Routes = [
   { path: 'products', component: HomePageComponent },
   { path: 'login', component: LoginPageComponent },
+  {path: 'products/add', component: AddProductsComponent},
 ];
 
 @NgModule({
@@ -24,13 +27,15 @@ const appRoutes: Routes = [
     NavbarComponent,
     HomePageComponent,
     SideBarComponent,
-    ProductsTableComponent
+    ProductsTableComponent,
+    AddProductsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes) ,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     ProductsService
