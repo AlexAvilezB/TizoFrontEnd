@@ -1,0 +1,65 @@
+.sideBarOpen{
+    position: absolute;
+    display: block;
+    z-index: 0;
+    background: none;
+    width:fit-content;
+    border: none;
+    box-shadow: none;
+    top: 50%;
+}
+
+
+.sideBarOpen:hover {
+    fill: black;
+}
+
+.sideBar{
+    position: absolute;
+    display: block;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.photo {
+    margin: 0 auto;
+}
+
+.logout {
+    margin-left: 6.5rem;
+}
+
+.sideBarList {
+    position: relative;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+    user-select: none;
+}
+
+.sideBarList::after {
+    content: "";
+    height: 3px;
+    position: absolute;
+    background-color: aquamarine;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: all 0.5s ease-out;
+}
+
+.sideBarList:hover{
+    color: white;
+    
+    
+}
+
+.sideBarList:focus{
+    color: white;
+}
+
+.sideBarList:hover:after {
+    height: 3px;
+    padding: 0 10px;
+    width: 100%;
+    
+}
