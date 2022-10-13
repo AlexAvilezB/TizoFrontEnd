@@ -12,7 +12,7 @@ Install Angular CLI as
 
 Clone or download this repo.
 
-Run inside this project folder to install all dependencies.
+Run inside this project (inventory-app) folder to install all dependencies.
 
 ```bash
   npm install --legacy-peer-deps
