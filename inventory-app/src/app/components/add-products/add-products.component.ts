@@ -26,6 +26,7 @@ export class AddProductsComponent implements OnInit {
     .subscribe (product => {
       this.products.push(product);
       this.router.navigate(['/products']);
+      alert('Product added successfully');
     })
   }
 

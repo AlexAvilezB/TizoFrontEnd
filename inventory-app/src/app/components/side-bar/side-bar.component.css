@@ -19,6 +19,7 @@
     display: block;
     z-index: 1;
     transition: all 0.5s ease;
+    height: 100%;
 }
 
 .photo {
@@ -63,3 +64,16 @@
     width: 100%;
     
 }
+
+@media (min-width: 1366px) {
+    .sideBar {
+        height: 150%
+    }
+    .list {     
+        margin-top: 20px;
+    }
+
+    .close{
+        padding: 10px
+    }
+ }

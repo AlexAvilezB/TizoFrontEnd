@@ -48,6 +48,7 @@ export class UpdateProductsComponent implements OnInit {
       cantity: this.cantityInput,
     }
     this.productService.updateProduct(myProduct).subscribe(data => {
+    alert('Product updated successfully');
     this.router.navigate(['products']);
   })
 }

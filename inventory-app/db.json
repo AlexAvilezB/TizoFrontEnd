@@ -2,9 +2,9 @@
   "products": [
     {
       "id": 1,
-      "product_name": "Case Corsair Mini ITX",
-      "description": "Little Case",
-      "price": 2000,
+      "product_name": "Laptop HP Pavilion Gaming",
+      "description": "Laptop for gaming",
+      "price": 30000,
       "cantity": 8
     },
     {

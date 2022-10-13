@@ -14,6 +14,10 @@ import { ProductsTableComponent } from './components/products-table/products-tab
 import { ProductsService } from './services/products.service';
 import { AddProductsComponent } from './components/add-products/add-products.component';
 import { UpdateProductsComponent } from './components/update-products/update-products.component';
+import { CategoriesListComponent } from './components/categories-list/categories-list.component';
+import { CategoriesTableComponent } from './components/categories-table/categories-table.component';
+import { AddCategoriesComponent } from './components/add-categories/add-categories.component';
+import { UpdateCategoriesComponent } from './components/update-categories/update-categories.component';
 
 
 const appRoutes: Routes = [
@@ -21,6 +25,9 @@ const appRoutes: Routes = [
   { path: 'login', component: LoginPageComponent },
   { path: 'products/add', component: AddProductsComponent},
   { path: 'products/update/:id', component: UpdateProductsComponent},
+  { path: 'categories', component: CategoriesListComponent},
+  { path: 'categories/add', component: AddCategoriesComponent},
+  { path: 'categories/update/:id', component: UpdateCategoriesComponent},
 ];
 
 @NgModule({
@@ -32,7 +39,11 @@ const appRoutes: Routes = [
     SideBarComponent,
     ProductsTableComponent,
     AddProductsComponent,
-    UpdateProductsComponent
+    UpdateProductsComponent,
+    CategoriesListComponent,
+    CategoriesTableComponent,
+    AddCategoriesComponent,
+    UpdateCategoriesComponent
   ],
   imports: [
     BrowserModule,
