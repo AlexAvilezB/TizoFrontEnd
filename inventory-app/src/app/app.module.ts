@@ -23,9 +23,12 @@ import { UsersTableComponent } from './components/users-table/users-table.compon
 import { UpdateUsersComponent } from './components/update-users/update-users.component';
 import { AddUsersComponent } from './components/add-users/add-users.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { CategoryService } from './services/categories.service';
+import { UsersService } from './services/users.service';
 
 
 const appRoutes: Routes = [
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'products', component: HomePageComponent },
   { path: 'login', component: LoginPageComponent },
   { path: 'products/add', component: AddProductsComponent},
@@ -68,7 +71,9 @@ const appRoutes: Routes = [
     ReactiveFormsModule
   ],
   providers: [
-    ProductsService
+    ProductsService,
+    CategoryService,
+    UsersService
   ],
   bootstrap: [AppComponent]
 })

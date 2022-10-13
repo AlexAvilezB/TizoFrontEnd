@@ -63,15 +63,6 @@
       "birthday": "2022-10-29",
       "role": "admin",
       "position": "Administrator"
-    },
-    {
-      "id": 4,
-      "username": "Martin",
-      "lastname": "Valejos",
-      "email": "mv@example.com",
-      "birthday": "2021-10-21",
-      "role": "user",
-      "position": "IT Manager"
     }
   ],
   "categories": [
@@ -86,10 +77,6 @@
     {
       "id": 3,
       "category_name": "Gaming"
-    },
-    {
-      "id": 4,
-      "category_name": "Technology"
     }
   ]
 }
