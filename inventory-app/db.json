@@ -81,6 +81,18 @@
   "categories": [
     {
       "id": 1,
+      "category_name": "Select a category"
+    },
+    {
+      "id": 2,
+      "category_name": "Office"
+    },
+    {
+      "id": 3,
+      "category_name": "Gaming"
+    },
+    {
+      "id": 4,
       "category_name": "Technology"
     }
   ]
