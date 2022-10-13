@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProductsService } from 'src/app/services/products.service';
 import { Product } from 'src/app/models/product.model';
 import { ActivatedRoute, Router } from '@angular/router';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-update-products',
@@ -10,7 +11,13 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class UpdateProductsComponent implements OnInit {
   title = '/ Update Product';
-  product: Product[] = [];        //inicializacion de la clase
+  product: Product[] = []; //inicializacion de la clase
+
+  nameField = new FormControl('', [Validators.required]);
+  descriptionField = new FormControl('', [Validators.required]);
+  priceField = new FormControl('', [Validators.required, Validators.min(1)]);
+  cantityField = new FormControl('', [Validators.required]);
+
   constructor(
     private productService: ProductsService,
     private router: Router,
@@ -18,7 +25,6 @@ export class UpdateProductsComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-
     //Metodo que obtiene el id del producto seleccionado mediante snapshot
 
     this.id = this.Route.snapshot.params['id'];
@@ -32,16 +38,12 @@ export class UpdateProductsComponent implements OnInit {
 
   editProduct() {
     if (this.id !== null) {
-      this.productService.getProductId(this.id)
-      .subscribe(
-        data => {
-          this.nameInput = data.product_name;
-          this.descriptionInput = data.description;
-          this.priceInput = data.price;
-          this.cantityInput = data.cantity;
-          
-        }
-      )
+      this.productService.getProductId(this.id).subscribe((data) => {
+        this.nameInput = data.product_name;
+        this.descriptionInput = data.description;
+        this.priceInput = data.price;
+        this.cantityInput = data.cantity;
+      });
     }
   }
 
@@ -54,12 +56,12 @@ export class UpdateProductsComponent implements OnInit {
       description: this.descriptionInput,
       price: this.priceInput,
       cantity: this.cantityInput,
-    }
-    this.productService.updateProduct(myProduct).subscribe(data => {
-    alert('Product updated successfully');
-    this.router.navigate(['products']);
-  })
-}
+    };
+    this.productService.updateProduct(myProduct).subscribe((data) => {
+      alert('Product updated successfully');
+      this.router.navigate(['products']);
+    });
+  }
 
   //Variables que guardan los datos de los inputs
 

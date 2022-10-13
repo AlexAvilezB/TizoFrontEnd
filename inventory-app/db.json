@@ -4,8 +4,8 @@
       "id": 1,
       "product_name": "Laptop HP Pavilion Gaming",
       "description": "Laptop for gaming",
-      "price": 30000,
-      "cantity": 8
+      "price": 20000,
+      "cantity": 3
     },
     {
       "id": 2,
@@ -42,7 +42,7 @@
       "username": "Alex",
       "lastname": "Avilez",
       "email": "aa@example.com",
-      "birthday": "October 12 2001",
+      "birthday": "2022-10-17",
       "role": "admin",
       "position": "Intern"
     },
@@ -51,7 +51,7 @@
       "username": "Marcos",
       "lastname": "Granadino",
       "email": "mg@example.com",
-      "birthday": "June 01 1999",
+      "birthday": "2022-06-21",
       "role": "user",
       "position": "Intern"
     },
@@ -60,7 +60,7 @@
       "username": "Lucia",
       "lastname": "Parrales",
       "email": "lp@example.com",
-      "birthday": "July 02 1978",
+      "birthday": "2022-10-29",
       "role": "admin",
       "position": "Administrator"
     },
@@ -69,7 +69,7 @@
       "username": "Martin",
       "lastname": "Valejos",
       "email": "mv@example.com",
-      "birthday": "Sept 14 1989",
+      "birthday": "2021-10-21",
       "role": "user",
       "position": "IT Manager"
     }
@@ -77,7 +77,7 @@
   "categories": [
     {
       "id": 1,
-      "category_name": "Select a category"
+      "category_name": "Default Category"
     },
     {
       "id": 2,

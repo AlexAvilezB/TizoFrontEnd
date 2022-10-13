@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Category } from 'src/app/models/category.model';
 import { CategoryService } from 'src/app/services/categories.service';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-add-categories',
@@ -15,7 +16,9 @@ export class AddCategoriesComponent implements OnInit {
   ) {}
 
   title = '/ Add Categories';
-  category: Category[] = [];      //Inicializacion de la clase
+  category: Category[] = []; //Inicializacion de la clase
+
+  nameField = new FormControl('', [Validators.required]);
 
   ngOnInit(): void {}
 
@@ -33,6 +36,6 @@ export class AddCategoriesComponent implements OnInit {
     });
   }
 
-  idInput: number = 0;               //Variables que guardan los datos de los inputs
+  idInput: number = 0; //Variables que guardan los datos de los inputs
   nameInput: string = '';
 }

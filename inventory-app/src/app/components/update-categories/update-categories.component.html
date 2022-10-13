@@ -10,10 +10,11 @@
       <label class="block text-gray-700 text-lg font-bold mb-2" for="category_name">
         Category Name:
       </label>
-      <input class=" focus:bg-white focus:border-blue-500 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id:category_name name="category_name" type="text" placeholder="Product Name" [(ngModel)]="nameInput">
+      <input [class.border-red-600]="nameField.touched && nameField.invalid" class=" focus:bg-white focus:border-blue-500 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id:category_name name="category_name" type="text" placeholder="Category Name" [(ngModel)]="nameInput" [formControl]="nameField">
+      <p class="text-red-600 mt-1 text-sm" *ngIf="nameField.touched && nameField.hasError('required')"><strong> This field is required</strong></p>
     </div>
     <div class="flex items-center justify-between">
-      <button (click)="saveChanges()" type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+      <button [disabled]="nameField.invalid" (click)="saveChanges()" type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
         Save Changes
       </button>
     </div>

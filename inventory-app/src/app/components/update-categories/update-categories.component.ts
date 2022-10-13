@@ -3,7 +3,7 @@ import { Product } from 'src/app/models/product.model';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CategoryService } from 'src/app/services/categories.service';
 import { Category } from 'src/app/models/category.model';
-
+import { FormControl, Validators } from '@angular/forms';
 @Component({
   selector: 'app-update-categories',
   templateUrl: './update-categories.component.html',
@@ -13,6 +13,8 @@ export class UpdateCategoriesComponent implements OnInit {
   title = '/ Update Category';
   category: Category[] = [];
 
+  nameField = new FormControl('', [Validators.required]);
+
   constructor(
     private categoryService: CategoryService,
     private router: Router,
@@ -20,7 +22,6 @@ export class UpdateCategoriesComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-
     //Metodo que obtiene el id de la categoria en la url mediante snapshot
 
     this.id = this.Route.snapshot.params['id'];
