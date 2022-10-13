@@ -1,4 +1,4 @@
-# Hades: Inventory Management System
+# HADES: Inventory Management System
 
 ## Deployment
 
@@ -28,10 +28,21 @@ Run the below commands - use "sudo" only on Mac/ Linux.
   sudo npm install -g @angular/cli
 ```
 
-Run
+Run `
 
 ```bash
  `ng serve` 
  ``` 
 For a dev server. Navigate to `http://localhost:4200/`.
 The application will automatically reload if you change any of the source files.
+
+To use the API run the following command inside the Project folder:
+
+Install Node.js and use node -v to check version (The version used in this project is 16.16).
+
+For more info about the Node installation: https://nodejs.org/en/docs/
+
+```bash
+ npm install -g json-server
+ ``` 
+
