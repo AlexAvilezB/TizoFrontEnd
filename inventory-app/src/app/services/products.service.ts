@@ -21,8 +21,8 @@ export class ProductsService {
     return this.http.post<Product>(this.APIUrl, product);
   }
 
-  getProductbyId(id: number) {
-    let selectedProduct = this.products[id];
+  getProductId(id: number) {
+    return this.http.get<Product>(`${this.APIUrl}/${id}`);
   }
 
   updateProduct(product: Product) {

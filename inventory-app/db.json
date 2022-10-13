@@ -2,10 +2,10 @@
   "products": [
     {
       "id": 1,
-      "product_name": "Samsung Galaxy 4",
-      "description": "Phone with 4g Signal",
-      "price": 3000,
-      "cantity": 3
+      "product_name": "Case Corsair Mini ITX",
+      "description": "Little Case",
+      "price": 2000,
+      "cantity": 8
     },
     {
       "id": 2,
