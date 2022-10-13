@@ -27,13 +27,6 @@
       "description": "Keyboard with RGB for gaming",
       "price": 3000,
       "cantity": 1
-    },
-    {
-      "id": 5,
-      "product_name": "Glorius Case ATX",
-      "description": "Case for PC with RGB",
-      "price": 3000,
-      "cantity": 10
     }
   ],
   "users": [
