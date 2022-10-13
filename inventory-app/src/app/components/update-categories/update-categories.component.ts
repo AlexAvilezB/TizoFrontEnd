@@ -20,10 +20,18 @@ export class UpdateCategoriesComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+
+    //Metodo que obtiene el id de la categoria en la url mediante snapshot
+
     this.id = this.Route.snapshot.params['id'];
+
+    //Llamada a editCategory
 
     this.editCategory();
   }
+
+  //Declaracion de metodo editCategory encargado de validar si el id es diferente de null, en caso de no serlo invoca
+  //a getCategoryId para obtener la categoria con el id seleccionado
 
   editCategory() {
     if (this.id !== null) {
@@ -32,6 +40,8 @@ export class UpdateCategoriesComponent implements OnInit {
       });
     }
   }
+
+  //Metodo que guarda los cambios realizados en la categoria -> Invoca a CategoryService para realizar Put
 
   saveChanges() {
     let myCategory = {
@@ -43,6 +53,8 @@ export class UpdateCategoriesComponent implements OnInit {
       this.router.navigate(['categories']);
     });
   }
+
+  //Variables que guardan los datos de los inputs
 
   id: number = 0;
   idInput: number = 0;

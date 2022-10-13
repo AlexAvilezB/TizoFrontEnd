@@ -19,6 +19,8 @@ export class AddProductsComponent implements OnInit {
   products: Product[] = [];
 
   ngOnInit(): void {}
+  
+  //Metodo para guardar al nuevo producto -> Invoca a ProductService
 
   saveProduct() {
     let product: Product = {id: this.idInput, product_name: this.nameInput, description: this.descriptionInput, price: this.priceInput, cantity: this.cantityInput};
@@ -30,7 +32,10 @@ export class AddProductsComponent implements OnInit {
     })
   }
 
-  idInput: number = 0;
+
+  //Variables que guardan los datos de los inputs
+
+  idInput: number = 0;                 
   nameInput: string = '';
   descriptionInput: string = '';
   priceInput: number = 0;

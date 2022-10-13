@@ -1,0 +1,51 @@
+<app-navbar></app-navbar>
+<div class="flex w-screen p-10 shadow-xl justify-between">
+    <div class="flex space-x-2 justify-center">
+        <h1 class="text-xl font-bold">{{title}}</h1>
+    </div>
+</div>
+<div class="w-screen mt-10 flex justify-center items-center">
+  <form action="" class="bg-white shadow-2xl rounded w-8/12 px-80 py-10 mb-10">
+    <div class="mb-4">
+      <label class="block text-gray-700 text-lg font-bold mb-2" for="username">
+        User Name:
+      </label>
+      <input class=" focus:bg-white focus:border-blue-500 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id:username name="username" type="text" placeholder="User Name" [(ngModel)]="nameInput">
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700 text-lg font-bold mb-2" for="lastname">
+        User LastName:
+      </label>
+      <input class=" focus:bg-white focus:border-blue-500 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id:lastname name="lastname" type="text" placeholder="User LastName" [(ngModel)]="lastnameInput">
+    </div>
+    <div class="mb-6">
+      <label class="block text-gray-700 text-lg font-bold mb-2" for="email">
+        Email:
+      </label>
+      <input class=" focus:bg-white focus:border-blue-500 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id:email name="email" type="email" placeholder="Product for ....." [(ngModel)]="emailInput">
+    </div>
+    <div class="mb-6">
+      <label class="block text-gray-700 text-lg font-bold mb-2" for="birthday">
+        Birthday:
+      </label>
+      <input class=" focus:bg-white focus:border-blue-500 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id:birthday name="birthday"  type="text" placeholder="Birthday Date" [(ngModel)]="birthInput">
+    </div>
+    <div class="mb-6">
+      <label class="block text-gray-700 text-lg font-bold mb-2" for="position">
+        Position:
+      </label>
+      <input class=" focus:bg-white focus:border-blue-500 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id:position name="position" type="text" placeholder="Position in the enterprise" [(ngModel)]="positionInput">
+    </div>
+    <div class="mb-6">
+      <label class="block text-gray-700 text-lg font-bold mb-2" for="role">
+        Role:
+      </label>
+      <input class=" focus:bg-white focus:border-blue-500 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id:role name="role" type="text" placeholder="Admin or User" [(ngModel)]="roleInput">
+    </div>
+    <div class="flex items-center justify-between">
+      <button (click)="saveChanges()" type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+        Save Changes
+      </button>
+    </div>
+  </form>
+</div>

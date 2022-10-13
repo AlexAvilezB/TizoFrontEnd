@@ -18,6 +18,11 @@ import { CategoriesListComponent } from './components/categories-list/categories
 import { CategoriesTableComponent } from './components/categories-table/categories-table.component';
 import { AddCategoriesComponent } from './components/add-categories/add-categories.component';
 import { UpdateCategoriesComponent } from './components/update-categories/update-categories.component';
+import { UsersListComponent } from './components/users-list/users-list.component';
+import { UsersTableComponent } from './components/users-table/users-table.component';
+import { UpdateUsersComponent } from './components/update-users/update-users.component';
+import { AddUsersComponent } from './components/add-users/add-users.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 
 const appRoutes: Routes = [
@@ -28,6 +33,10 @@ const appRoutes: Routes = [
   { path: 'categories', component: CategoriesListComponent},
   { path: 'categories/add', component: AddCategoriesComponent},
   { path: 'categories/update/:id', component: UpdateCategoriesComponent},
+  { path: 'users', component: UsersListComponent},
+  { path: 'users/update/:id', component: UpdateUsersComponent},
+  { path: 'users/add', component: AddUsersComponent},
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
@@ -43,7 +52,12 @@ const appRoutes: Routes = [
     CategoriesListComponent,
     CategoriesTableComponent,
     AddCategoriesComponent,
-    UpdateCategoriesComponent
+    UpdateCategoriesComponent,
+    UsersListComponent,
+    UsersTableComponent,
+    UpdateUsersComponent,
+    AddUsersComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -39,43 +39,39 @@
   "users": [
     {
       "id": 1,
-      "username": "Alex Avilez",
+      "username": "Alex",
+      "lastname": "Avilez",
       "email": "aa@example.com",
-      "fechaN": "October 12 2001",
+      "birthday": "October 12 2001",
       "role": "admin",
       "position": "Intern"
     },
     {
       "id": 2,
-      "username": "Marcos Granadino",
+      "username": "Marcos",
+      "lastname": "Granadino",
       "email": "mg@example.com",
-      "fechaN": "June 01 1999",
+      "birthday": "June 01 1999",
       "role": "user",
       "position": "Intern"
     },
     {
       "id": 3,
-      "username": "Lucia Parrales",
+      "username": "Lucia",
+      "lastname": "Parrales",
       "email": "lp@example.com",
-      "fechaN": "July 02 1978",
+      "birthday": "July 02 1978",
       "role": "admin",
       "position": "Administrator"
     },
     {
       "id": 4,
-      "username": "Martin Valejos",
+      "username": "Martin",
+      "lastname": "Valejos",
       "email": "mv@example.com",
-      "fechaN": "Sept 14 1989",
+      "birthday": "Sept 14 1989",
       "role": "user",
       "position": "IT Manager"
-    },
-    {
-      "id": 5,
-      "username": "Carlos Valejos",
-      "email": "cv@example.com",
-      "fechaN": "Sept 29 1997",
-      "role": "user",
-      "position": "FrontEnd Developer"
     }
   ],
   "categories": [

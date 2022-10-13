@@ -12,6 +12,8 @@ export class SideBarComponent implements OnInit {
 
   public collapsed = false;
 
+  //Metodo que cierra el sidebar cuando se hace click en el boton cerrar
+
   closeSideBar() {
     this.collapsed = !this.collapsed;
   }

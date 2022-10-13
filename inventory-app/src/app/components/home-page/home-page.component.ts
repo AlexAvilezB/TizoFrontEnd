@@ -14,6 +14,8 @@ export class HomePageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //Metodo para redirigir a la pagina de adicion de productos
+
   irAgregar() {
     this.router.navigate(['/products/add']);
   }

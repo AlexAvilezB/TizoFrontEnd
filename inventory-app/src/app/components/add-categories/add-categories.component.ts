@@ -15,9 +15,11 @@ export class AddCategoriesComponent implements OnInit {
   ) {}
 
   title = '/ Add Categories';
-  category: Category[] = [];
+  category: Category[] = [];      //Inicializacion de la clase
 
   ngOnInit(): void {}
+
+  //Metodo que guardar la categoria nueva -> Invoca a CategoryService
 
   saveCategory() {
     let category: Category = {
@@ -31,6 +33,6 @@ export class AddCategoriesComponent implements OnInit {
     });
   }
 
-  idInput: number = 0;
+  idInput: number = 0;               //Variables que guardan los datos de los inputs
   nameInput: string = '';
 }

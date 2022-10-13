@@ -12,6 +12,8 @@ export class CategoriesListComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  //Metodo para redirigir a la pagina de adicion de categorias
+
   goToAdd() {
     this.router.navigate(['/categories/add']);
   }

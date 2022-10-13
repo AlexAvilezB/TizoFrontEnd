@@ -11,7 +11,11 @@ export class CategoryService {
 
   constructor(private http: HttpClient) {}
 
+  //URL de la API
+
   APIUrl = 'http://localhost:3000/categories';
+
+  //Metodos que realizan las llamadas a la API
 
   getCategories() {
     return this.http.get<Category[]>(this.APIUrl);

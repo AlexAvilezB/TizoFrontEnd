@@ -11,7 +11,11 @@ export class ProductsService {
 
   products: Product[] = [];
 
+  //URL de la API
+
   APIUrl = 'http://localhost:3000/products';
+
+  //Metodos que realizan las llamadas a la API
 
   getProducts() {
     return this.http.get<Product[]>(this.APIUrl);

@@ -10,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class UpdateProductsComponent implements OnInit {
   title = '/ Update Product';
-  product: Product[] = [];
+  product: Product[] = [];        //inicializacion de la clase
   constructor(
     private productService: ProductsService,
     private router: Router,
@@ -19,10 +19,16 @@ export class UpdateProductsComponent implements OnInit {
 
   ngOnInit(): void {
 
+    //Metodo que obtiene el id del producto seleccionado mediante snapshot
+
     this.id = this.Route.snapshot.params['id'];
+
+    //Llamado al metodo que obtiene el producto por id
 
     this.editProduct();
   }
+
+  // declaracion de metodo que llena los inputs con los datos del producto seleccionado
 
   editProduct() {
     if (this.id !== null) {
@@ -39,6 +45,8 @@ export class UpdateProductsComponent implements OnInit {
     }
   }
 
+  //Metodo que guarda los cambios realizados al producto -> Invoca a ProductService para realizar el put
+
   saveChanges() {
     let myProduct = {
       id: this.id,
@@ -52,6 +60,8 @@ export class UpdateProductsComponent implements OnInit {
     this.router.navigate(['products']);
   })
 }
+
+  //Variables que guardan los datos de los inputs
 
   id: number = 0;
   idInput: number = 0;
