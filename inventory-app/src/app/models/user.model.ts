@@ -4,6 +4,7 @@ export class User {
     username: string,
     lastname: string,
     email: string,
+    password: string,
     birthday: string,
     role: string,
     position: string
@@ -12,6 +13,7 @@ export class User {
     this.username = username;
     this.lastname = lastname;
     this.email = email;
+    this.password = password;
     this.birthday = birthday;
     this.role = role;
     this.position = position;
@@ -21,6 +23,7 @@ export class User {
   username: string;
   lastname: string;
   email: string;
+  password: string;
   birthday: string;
   role: string;
   position: string;

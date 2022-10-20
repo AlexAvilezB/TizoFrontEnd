@@ -17,7 +17,7 @@
       <input [class.border-red-600]="passwordField.touched && passwordField.invalid" class=" focus:bg-white focus:border-blue-500 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" name="password" id="password" type="password" placeholder="************" [formControl]="passwordField">
       <p class="text-red-600 mt-1 text-sm" *ngIf="passwordField.touched && passwordField.hasError('required')"><strong> This field is required</strong></p>
     </div>
-    <div (click)="goToProducts()" class="flex items-center justify-between mb-20" #button>
+    <div (click)="Login()" class="flex items-center justify-between mb-20" #button>
       <button [disabled]="emailField.invalid || passwordField.invalid" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
         Sign In
       </button>

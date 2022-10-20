@@ -25,6 +25,8 @@ import { AddUsersComponent } from './components/add-users/add-users.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CategoryService } from './services/categories.service';
 import { UsersService } from './services/users.service';
+import { AuthService } from './services/auth.service';
+import { CredentialService } from './services/credential.service';
 
 
 const appRoutes: Routes = [
@@ -73,7 +75,9 @@ const appRoutes: Routes = [
   providers: [
     ProductsService,
     CategoryService,
-    UsersService
+    UsersService,
+    AuthService,
+    CredentialService
   ],
   bootstrap: [AppComponent]
 })

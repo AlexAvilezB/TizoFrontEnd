@@ -1,4 +1,16 @@
 {
+  "credentials": [
+    {
+      "id": 1,
+      "email": "aa@example.com",
+      "password": "12345"
+    },
+    {
+      "id": 2,
+      "email": "jd@example.com",
+      "password": "juanitoduranuwu123"
+    }
+  ],
   "products": [
     {
       "id": 1,
@@ -6,27 +18,6 @@
       "description": "Laptop for gaming",
       "price": 20000,
       "cantity": 3
-    },
-    {
-      "id": 2,
-      "product_name": "LG Ultra Wide Monitor",
-      "description": "Monitor with 4k resolution",
-      "price": 20000,
-      "cantity": 5
-    },
-    {
-      "id": 3,
-      "product_name": "Razer Blade Mouse",
-      "description": "Mouse for gaming",
-      "price": 20000,
-      "cantity": 6
-    },
-    {
-      "id": 4,
-      "product_name": "Razer Keyboard",
-      "description": "Keyboard with RGB for gaming",
-      "price": 3000,
-      "cantity": 1
     }
   ],
   "users": [
@@ -35,27 +26,20 @@
       "username": "Alex",
       "lastname": "Avilez",
       "email": "aa@example.com",
+      "password": "12345",
       "birthday": "2022-10-17",
       "role": "admin",
       "position": "Intern"
     },
     {
       "id": 2,
-      "username": "Marcos",
-      "lastname": "Granadino",
-      "email": "mg@example.com",
-      "birthday": "2022-06-21",
+      "username": "Juanito",
+      "lastname": "Duran",
+      "email": "jd@example.com",
+      "password": "juanitoduranuwu123",
+      "birthday": "2022-10-27",
       "role": "user",
-      "position": "Intern"
-    },
-    {
-      "id": 3,
-      "username": "Lucia",
-      "lastname": "Parrales",
-      "email": "lp@example.com",
-      "birthday": "2022-10-29",
-      "role": "admin",
-      "position": "Administrator"
+      "position": "IT"
     }
   ],
   "categories": [

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, Injectable, OnInit } from '@angular/core';
 import { FormControl, NgForm, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -11,11 +11,13 @@ export class LoginPageComponent implements OnInit {
   emailField = new FormControl('', [Validators.required, Validators.email]);
   passwordField = new FormControl('', [Validators.required]);
 
-  constructor(private router:Router) {}
+  constructor(private router: Router) {}
+
+  Login() {
+    const email = this.emailField.value;
+    const password = this.passwordField.value;
+    //this.router.navigate(['/products']);
+  }
 
   ngOnInit(): void {}
-
-  goToProducts() {
-    this.router.navigate(['/products']);
-  }
 }
