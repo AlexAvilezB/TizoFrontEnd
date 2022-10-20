@@ -33,7 +33,7 @@ export class AddUsersComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  //Metodo que guarda el usuario nuevo -> Invoca a UserService para realizar Post
+  //Metodo que guarda el usuario nuevo (las credenciales tambien se respaldan en un array propio, para uso posterior del login) -> Invoca a UserService para realizar Post
 
   saveUser() {
     let user: User = {

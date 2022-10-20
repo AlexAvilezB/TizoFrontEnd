@@ -57,7 +57,7 @@ export class UpdateUsersComponent implements OnInit {
     }
   }
 
-  //Metodo que guarda los cambios realizados al usuario -> Invoca a UserService para realizar el put
+  //Metodo que guarda los cambios realizados al usuario (incluyendo credenciales) -> Invoca a UserService para realizar el put
 
   saveChanges() {
     let myUser = {
