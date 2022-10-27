@@ -27,6 +27,7 @@ import { CategoryService } from './services/categories.service';
 import { UsersService } from './services/users.service';
 import { AuthService } from './services/auth.service';
 import { CredentialService } from './services/credential.service';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
 
 
 const appRoutes: Routes = [
@@ -41,6 +42,7 @@ const appRoutes: Routes = [
   { path: 'users', component: UsersListComponent},
   { path: 'users/update/:id', component: UpdateUsersComponent},
   { path: 'users/add', component: AddUsersComponent},
+  { path: 'sideNav', component: SideNavComponent},
   { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -62,7 +64,8 @@ const appRoutes: Routes = [
     UsersTableComponent,
     UpdateUsersComponent,
     AddUsersComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
