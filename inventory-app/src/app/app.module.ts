@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { LoginPageComponent } from './components/login-page/login-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
-import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductsTableComponent } from './components/products-table/products-table.component';
 import { ProductsService } from './services/products.service';
@@ -43,7 +42,6 @@ const appRoutes: Routes = [
   { path: 'users', component: UsersListComponent },
   { path: 'users/update/:id', component: UpdateUsersComponent },
   { path: 'users/add', component: AddUsersComponent },
-  { path: 'sideNav', component: SideNavComponent },
   { path: '404', component: PageNotFoundComponent },
   { path: '**', redirectTo: '/404' },
 ];
@@ -54,7 +52,6 @@ const appRoutes: Routes = [
     LoginPageComponent,
     NavbarComponent,
     HomePageComponent,
-    SideBarComponent,
     ProductsTableComponent,
     AddProductsComponent,
     UpdateProductsComponent,

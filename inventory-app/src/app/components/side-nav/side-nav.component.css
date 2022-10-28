@@ -7,6 +7,7 @@
     width: 5rem;
     height: 100vh;
     box-shadow: 0.063rem 0 1.25rem 0 rgba(0, 0, 0, 0.5);
+    user-select: none;
 }
 
 .sidenav .logo_container{
