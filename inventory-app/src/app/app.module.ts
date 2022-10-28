@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { LoginPageComponent } from './components/login-page/login-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
-import { SideBarComponent } from './components/side-bar/side-bar.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductsTableComponent } from './components/products-table/products-table.component';
 import { ProductsService } from './services/products.service';
@@ -25,21 +24,26 @@ import { AddUsersComponent } from './components/add-users/add-users.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CategoryService } from './services/categories.service';
 import { UsersService } from './services/users.service';
+import { AuthService } from './services/auth.service';
+import { CredentialService } from './services/credential.service';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { BodyComponent } from './components/body/body.component';
 
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'products', component: HomePageComponent },
   { path: 'login', component: LoginPageComponent },
-  { path: 'products/add', component: AddProductsComponent},
-  { path: 'products/update/:id', component: UpdateProductsComponent},
-  { path: 'categories', component: CategoriesListComponent},
-  { path: 'categories/add', component: AddCategoriesComponent},
-  { path: 'categories/update/:id', component: UpdateCategoriesComponent},
-  { path: 'users', component: UsersListComponent},
-  { path: 'users/update/:id', component: UpdateUsersComponent},
-  { path: 'users/add', component: AddUsersComponent},
-  { path: '**', component: PageNotFoundComponent }
+  { path: 'products/add', component: AddProductsComponent },
+  { path: 'products/update/:id', component: UpdateProductsComponent },
+  { path: 'categories', component: CategoriesListComponent },
+  { path: 'categories/add', component: AddCategoriesComponent },
+  { path: 'categories/update/:id', component: UpdateCategoriesComponent },
+  { path: 'users', component: UsersListComponent },
+  { path: 'users/update/:id', component: UpdateUsersComponent },
+  { path: 'users/add', component: AddUsersComponent },
+  { path: '404', component: PageNotFoundComponent },
+  { path: '**', redirectTo: '/404' },
 ];
 
 @NgModule({
@@ -48,7 +52,6 @@ const appRoutes: Routes = [
     LoginPageComponent,
     NavbarComponent,
     HomePageComponent,
-    SideBarComponent,
     ProductsTableComponent,
     AddProductsComponent,
     UpdateProductsComponent,
@@ -60,7 +63,9 @@ const appRoutes: Routes = [
     UsersTableComponent,
     UpdateUsersComponent,
     AddUsersComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SideNavComponent,
+    BodyComponent
   ],
   imports: [
     BrowserModule,
@@ -73,7 +78,9 @@ const appRoutes: Routes = [
   providers: [
     ProductsService,
     CategoryService,
-    UsersService
+    UsersService,
+    AuthService,
+    CredentialService
   ],
   bootstrap: [AppComponent]
 })
