@@ -26,8 +26,9 @@
     font-size: 24px;
     font-weight: 900;
     cursor: pointer;
-    border: none;
+    border: 1px solid black;
     color: white;
+    transition: 0.5s ease;
 }
 
 .sidenav .logo-text{
@@ -45,6 +46,7 @@
     border-radius: 50%;
     background-color: transparent;
     border: none;
+    transition: all 0.5s ease;
 }
 
 .sidenav-collapsed {
@@ -58,7 +60,6 @@
     flex-direction: column;
     align-items: center;
     height: calc(100% - 3.65rem);
-    cursor: pointer;
 }
 
 .sidenav-nav .sidenav-nav-item{
@@ -91,4 +92,30 @@
     color: white;
     background: black;
 }
+
+.sidenav .logo:hover{
+    color: black;
+    background: white;
+}
+
+.sidenav-nav .logout{
+    margin-top: 25px;
+}
+
+.sidenav-nav .logout:hover{
+    color: white;
+    background: red;
+}
+
+.sidenav .btn-close:hover{
+    background: red;
+    border-radius: 0%;
+}
+
+.active {
+    background-color: black;
+    color: white;
+}
+
+
 
