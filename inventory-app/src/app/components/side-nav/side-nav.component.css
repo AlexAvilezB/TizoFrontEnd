@@ -12,7 +12,7 @@
 .sidenav .logo_container{
     display: flex;
     align-items: center;
-    padding: 0.938rem  0.938rem  0.938rem;
+    padding: 0.938rem  0.938rem  8rem;
     width: 100%;
 }
 
@@ -98,9 +98,6 @@
     background: white;
 }
 
-.sidenav-nav .logout{
-    margin-top: 25px;
-}
 
 .sidenav-nav .logout:hover{
     color: white;
@@ -109,7 +106,7 @@
 
 .sidenav .btn-close:hover{
     background: red;
-    border-radius: 0%;
+    border-radius: 10%;
 }
 
 .active {
