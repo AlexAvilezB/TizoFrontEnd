@@ -34,16 +34,17 @@ const appRoutes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'products', component: HomePageComponent },
   { path: 'login', component: LoginPageComponent },
-  { path: 'products/add', component: AddProductsComponent},
-  { path: 'products/update/:id', component: UpdateProductsComponent},
-  { path: 'categories', component: CategoriesListComponent},
-  { path: 'categories/add', component: AddCategoriesComponent},
-  { path: 'categories/update/:id', component: UpdateCategoriesComponent},
-  { path: 'users', component: UsersListComponent},
-  { path: 'users/update/:id', component: UpdateUsersComponent},
-  { path: 'users/add', component: AddUsersComponent},
-  { path: 'sideNav', component: SideNavComponent},
-  { path: '**', component: PageNotFoundComponent }
+  { path: 'products/add', component: AddProductsComponent },
+  { path: 'products/update/:id', component: UpdateProductsComponent },
+  { path: 'categories', component: CategoriesListComponent },
+  { path: 'categories/add', component: AddCategoriesComponent },
+  { path: 'categories/update/:id', component: UpdateCategoriesComponent },
+  { path: 'users', component: UsersListComponent },
+  { path: 'users/update/:id', component: UpdateUsersComponent },
+  { path: 'users/add', component: AddUsersComponent },
+  { path: 'sideNav', component: SideNavComponent },
+  { path: '404', component: PageNotFoundComponent },
+  { path: '**', redirectTo: '/404' },
 ];
 
 @NgModule({

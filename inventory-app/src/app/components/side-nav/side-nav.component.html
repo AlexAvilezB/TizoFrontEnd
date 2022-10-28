@@ -1,4 +1,4 @@
-<div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''">
+<div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''" *ngIf="router.url !== '/login' && router.url !== '/404'">
     <div class="logo_container">
         <button class="logo" (click)="toggleCollapse()">H</button>
         <div class="logo-text" *ngIf="collapsed">HADES</div>
