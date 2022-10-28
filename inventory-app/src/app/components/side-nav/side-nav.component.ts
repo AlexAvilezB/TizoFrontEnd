@@ -16,7 +16,9 @@ interface sideNavToggle {
 export class SideNavComponent implements OnInit {
   constructor(public router: Router) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.screenWidth = window.innerWidth;
+  }
 
   @Output() onToggleSideNav: EventEmitter<sideNavToggle> = new EventEmitter();
   screenWidth = 0;

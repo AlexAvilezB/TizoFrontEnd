@@ -28,6 +28,7 @@ import { UsersService } from './services/users.service';
 import { AuthService } from './services/auth.service';
 import { CredentialService } from './services/credential.service';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { BodyComponent } from './components/body/body.component';
 
 
 const appRoutes: Routes = [
@@ -66,7 +67,8 @@ const appRoutes: Routes = [
     UpdateUsersComponent,
     AddUsersComponent,
     PageNotFoundComponent,
-    SideNavComponent
+    SideNavComponent,
+    BodyComponent
   ],
   imports: [
     BrowserModule,
